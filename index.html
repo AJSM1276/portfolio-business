@@ -1612,6 +1612,84 @@
             }
         }
 
+        /* ===== Contact Section Responsive Fixes ===== */
+@media (max-width: 767px) {
+    .contact {
+        padding: var(--space-lg) 0;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+    
+    .contact-grid {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-lg);
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 var(--space-sm);
+    }
+    
+    .contact-info,
+    .contact-form-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: var(--space-md);
+        box-sizing: border-box;
+    }
+    
+    .contact-form {
+        width: 100%;
+    }
+    
+    .form-control {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    select.form-control {
+        width: 100%;
+    }
+    
+    /* Fix any overflow issues */
+    .contact-item {
+        flex-wrap: wrap;
+    }
+    
+    .contact-item-content {
+        min-width: 0; /* Allow text wrapping */
+    }
+}
+
+/* Also add this for very small screens */
+@media (max-width: 480px) {
+    .contact-info,
+    .contact-form-container {
+        padding: var(--space-sm);
+    }
+    
+    .contact-details {
+        gap: var(--space-md);
+    }
+    
+    .contact-item {
+        padding: var(--space-sm);
+    }
+    
+    .form-group {
+        gap: var(--space-xs);
+    }
+    
+    .btn-primary {
+        width: 100%;
+        padding: var(--space-md);
+    }
+
+    .contact-itemicon {
+        display: none
+    }
+}
+
         .contact-info {
             background-color: var(--primary-very-light);
             padding: var(--space-lg);
@@ -2399,7 +2477,7 @@
 
                             <div class="form-group">
                                 <label for="subject" class="form-label">Grade Level</label>
-                                <select id="subject" class="form-control" required>
+                                <select id="grade-level" class="form-control" required>
                                     <option value="" disabled selected>Select a topic</option>
                                     <option value="service-inquiry">Freshman</option>
                                     <option value="general-question">Sophomore</option>

@@ -2893,7 +2893,7 @@
                 <li>Academic stats</li>
                 <li>Progress tracker</li>
             </ul>
-            <a href="https://payhip.com/b/9IPqe" class="download-btn">Download Now</a>
+            <a href="https://payhip.com/b/9IPqe" target="_blank" class="download-btn">Download Now</a>
             </div>
             
             <!-- Product 2 -->
@@ -2907,7 +2907,7 @@
                 <li>Color coding</li>
                 <li>Pre-formatted</li>
             </ul>
-            <a href="#" class="download-btn">Download Now</a>
+            <a href="#" target="_blank" class="download-btn">Download Now</a>
             </div>
             
             <!-- Product 3 -->
@@ -2921,7 +2921,7 @@
                 <li>Videos</li>
                 <li>Practice sheets & notes</li>
             </ul>
-            <a href="#" class="download-btn">Visit Website</a>
+            <a href="#" target="_blank" class="download-btn">Visit Website</a>
             </div>
         </div>
         
@@ -3784,31 +3784,31 @@
         });
         
         // ===== DOWNLOAD BUTTONS =====
-        const downloadBtns = document.querySelectorAll('.download-btn');
+        // const downloadBtns = document.querySelectorAll('.download-btn');
         
-        downloadBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                const resource = this.getAttribute('data-resource');
-                let resourceName = '';
+        // downloadBtns.forEach(btn => {
+        //     btn.addEventListener('click', function() {
+        //         const resource = this.getAttribute('data-resource');
+        //         let resourceName = '';
                 
-                switch(resource) {
-                    case 'essay-worksheet':
-                        resourceName = 'Essay Brainstorming Worksheet';
-                        break;
-                    case 'planning-checklist':
-                        resourceName = 'High School Planning Checklist';
-                        break;
-                    case 'application-timeline':
-                        resourceName = 'College Application Timeline';
-                        break;
-                    default:
-                        resourceName = 'Resource';
-                }
+        //         switch(resource) {
+        //             case 'essay-worksheet':
+        //                 resourceName = 'Essay Brainstorming Worksheet';
+        //                 break;
+        //             case 'planning-checklist':
+        //                 resourceName = 'High School Planning Checklist';
+        //                 break;
+        //             case 'application-timeline':
+        //                 resourceName = 'College Application Timeline';
+        //                 break;
+        //             default:
+        //                 resourceName = 'Resource';
+        //         }
                 
-                // Show download notification
-                alert(`${resourceName} downloaded! (This is a demo - in a real site, this would download a PDF)`);
-            });
-        });
+        //         // Show download notification
+        //         alert(`${resourceName} downloaded! (This is a demo - in a real site, this would download a PDF)`);
+        //     });
+        // });
         
         // ===== CONTACT FORM =====
         // Contact Form Submission - MODIFIED FOR FORMSPREE

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | PolarPrep</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --primary: #5a8da6;
+            --primary-light: #7ba9c0;
+            --primary-very-light: #e8f0f7;
+            --secondary: #f8f5f0;
+            --text: #333333;
+            --text-light: #666666;
+            --white: #ffffff;
+            --off-white: #faf9f7;
+            --border: #e0e0e0;
+            
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2.5rem;
+            --space-xl: 4rem;
+            
+            /* Typography */
+            --font-xs: 0.875rem;
+            --font-sm: 1rem;
+            --font-md: 1.125rem;
+            --font-lg: 1.5rem;
+            --font-xl: 2rem;
+            --font-xxl: 2.5rem;
+            
+            /* Borders */
+            --radius: 8px;
+            --radius-lg: 12px;
+            
+            /* Shadows */
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
+            
+            /* Transitions */
+            --transition: 0.3s ease;
+        }
+
+        /* ===== Reset & Base Styles ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comfortaa', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: linear-gradient(135deg, var(--primary-very-light) 0%, var(--secondary) 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        /* ===== Typography ===== */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--primary);
+            margin-bottom: var(--space-sm);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+        }
+
+        h2 {
+            font-size: var(--font-xl);
+        }
+
+        p {
+            margin-bottom: var(--space-sm);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-light);
+        }
+
+        /* ===== Header ===== */
+        .header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-weight: 600;
+            color: var(--primary);
+            font-size: var(--font-md);
+        }
+
+        .logo-icon img {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* ===== Main Content ===== */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: var(--space-xl) 0;
+            position: relative;
+        }
+
+        .construction-container {
+            text-align: center;
+            padding: var(--space-xl) var(--space-lg);
+            background-color: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .construction-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+        }
+
+        .construction-icon {
+            font-size: 5rem;
+            margin-bottom: var(--space-lg);
+            animation: bounce 2s infinite ease-in-out;
+            display: inline-block;
+        }
+
+        .construction-title {
+            margin-bottom: var(--space-md);
+            color: var(--primary);
+        }
+
+        .construction-subtitle {
+            font-size: var(--font-lg);
+            color: var(--text-light);
+            margin-bottom: var(--space-lg);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .status-update {
+            background-color: var(--primary-very-light);
+            padding: var(--space-lg);
+            border-radius: var(--radius);
+            border-left: 4px solid var(--primary);
+            margin: var(--space-lg) 0;
+            text-align: left;
+        }
+
+        .status-update h3 {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+            color: var(--primary);
+        }
+
+        .status-update h3 i {
+            font-size: 1.25rem;
+        }
+
+        .status-update p {
+            margin-bottom: var(--space-sm);
+        }
+
+        .status-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+            padding: var(--space-sm);
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: var(--radius);
+            transition: transform var(--transition);
+        }
+
+        .status-item:hover {
+            transform: translateX(5px);
+        }
+
+        .status-item i {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-top: 0.25rem;
+            flex-shrink: 0;
+        }
+
+        .status-text {
+            flex: 1;
+        }
+
+        .status-label {
+            font-weight: 600;
+            color: var(--text);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .status-desc {
+            font-size: var(--font-sm);
+            color: var(--text-light);
+        }
+
+        .personal-message {
+            background-color: var(--secondary);
+            padding: var(--space-lg);
+            border-radius: var(--radius);
+            margin: var(--space-lg) 0;
+            border: 1px solid var(--border);
+        }
+
+        .personal-message h3 {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+        }
+
+        .personal-message h3 i {
+            color: var(--primary);
+        }
+
+        .progress-indicator {
+            margin: var(--space-lg) 0;
+        }
+
+        .progress-text {
+            font-size: var(--font-sm);
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: var(--space-md);
+        }
+
+        .progress-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-top: var(--space-md);
+        }
+
+        .progress-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--border);
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        .progress-dot:nth-child(1) { animation-delay: 0s; }
+        .progress-dot:nth-child(2) { animation-delay: 0.2s; }
+        .progress-dot:nth-child(3) { animation-delay: 0.4s; }
+        .progress-dot:nth-child(4) { animation-delay: 0.6s; }
+        .progress-dot:nth-child(5) { animation-delay: 0.8s; }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-md);
+            margin: var(--space-lg) 0;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background-color: var(--primary-very-light);
+            border-radius: 50%;
+            color: var(--primary);
+            font-size: 1.25rem;
+            transition: all var(--transition);
+            border: 1px solid var(--border);
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: var(--shadow);
+        }
+
+        .social-link:hover:nth-child(1) { background-color: #0077b5; border-color: #0077b5; }
+        .social-link:hover:nth-child(2) { background-color: #e4405f; border-color: #e4405f; }
+        .social-link:hover:nth-child(3) { background-color: #ff0000; border-color: #ff0000; }
+        .social-link:hover:nth-child(4) { background-color: #000000; border-color: #000000; }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius);
+            font-weight: 600;
+            transition: all var(--transition);
+            text-decoration: none;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-light);
+            transform: translateY(-2px);
+            color: var(--white);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            background-color: var(--white);
+            padding: var(--space-lg) 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer-info {
+            color: var(--text-light);
+            font-size: var(--font-sm);
+        }
+
+        .copyright {
+            margin-top: var(--space-xs);
+            font-size: var(--font-xs);
+            color: var(--text-light);
+        }
+
+        /* ===== Animations ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% { 
+                transform: translateY(0); 
+            }
+            50% { 
+                transform: translateY(-15px); 
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { 
+                opacity: 0.3;
+                transform: scale(0.8);
+            }
+            50% { 
+                opacity: 1;
+                transform: scale(1);
+                background-color: var(--primary);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { 
+                transform: translateY(0) rotate(0deg); 
+            }
+            50% { 
+                transform: translateY(-10px) rotate(5deg); 
+            }
+        }
+
+        /* ===== Decorative Elements ===== */
+        .decoration {
+            position: absolute;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.1;
+            font-size: 10rem;
+        }
+
+        .decoration-1 {
+            top: 10%;
+            left: 5%;
+            animation: float 8s infinite ease-in-out;
+        }
+
+        .decoration-2 {
+            bottom: 10%;
+            right: 5%;
+            animation: float 10s infinite ease-in-out reverse;
+        }
+
+        /* ===== Responsive Styles ===== */
+        @media (max-width: 768px) {
+            .construction-container {
+                padding: var(--space-lg) var(--space-md);
+            }
+            
+            .construction-icon {
+                font-size: 4rem;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .construction-icon {
+                font-size: 3rem;
+            }
+            
+            .social-link {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            
+            .status-update {
+                padding: var(--space-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <span class="logo-icon"><img src="../images/PolarPrep.png" alt="PolarPrep Logo"></span>
+                    <span class="logo-text">PolarPrep</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Decorative Elements -->
+        <div class="decoration decoration-1">👨‍💻</div>
+        <div class="decoration decoration-2">🚀</div>
+        
+        <div class="container">
+            <div class="construction-container">
+                <div class="construction-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                
+                <h1 class="construction-title">Under Construction</h1>
+                
+                <p class="construction-subtitle">
+                    I'm currently building this page! It's not quite ready yet, but I'm working on it.
+                </p>
+                
+                <div class="personal-message">
+                    <h3>
+                        <i class="fas fa-user-circle"></i>
+                        A Personal Note From Me
+                    </h3>
+                    <p>Hi there! If you're looking to purchase one of my services, send me an inquiry through the contact form or email me directly at aldrichmagpali1276@gmail.com</p>
+
+                    <p>Thanks for your patience while I put everything together!</p>
+                </div>
+                
+                <div class="status-update">
+                    <h3>
+                        <i class="fas fa-tasks"></i>
+                        What I'm Working On
+                    </h3>
+                    
+                    <div class="status-item">
+                        <i class="fas fa-code"></i>
+                        <div class="status-text">
+                            <span class="status-label">Website Development</span>
+                            <span class="status-desc">Building out pages and features</span>
+                        </div>
+                    </div>
+                    
+                    <div class="status-item">
+                        <i class="fas fa-edit"></i>
+                        <div class="status-text">
+                            <span class="status-label">Content Creation</span>
+                            <span class="status-desc">Writing helpful guides and resources</span>
+                        </div>
+                    </div>
+                    
+                    <div class="status-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="status-text">
+                            <span class="status-label">Quality Assurance</span>
+                            <span class="status-desc">Making sure everything works properly</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="progress-indicator">
+                    <p class="progress-text">Working on it... slowly but surely!</p>
+                    <div class="progress-visual">
+                        <div class="progress-dot"></div>
+                        <div class="progress-dot"></div>
+                        <div class="progress-dot"></div>
+                        <div class="progress-dot"></div>
+                        <div class="progress-dot"></div>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/aldrich-magpali/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ajsm1276/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@AJSM1276" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@ajsm3" target="_blank" rel="noopener noreferrer" class="social-link" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="/" class="btn btn-primary">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Go Back Home</span>
+                    </a>
+                    <a href="mailto:aldrichmagpali1276@gmail.com" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+                
+                <p style="margin-top: var(--space-lg); font-size: var(--font-sm); color: var(--text-light);">
+                    <i class="fas fa-clock"></i>
+                    Check back soon for updates!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <p>PolarPrep · QuestBridge-admitted student · Gates Scholarship Semi-Finalist</p>
+                <p class="copyright">© <span id="current-year">2026</span> PolarPrep · Built by one student trying to help others</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Add hover animation to construction icon
+        const constructionIcon = document.querySelector('.construction-icon i');
+        constructionIcon.addEventListener('mouseenter', () => {
+            constructionIcon.style.animation = 'none';
+            setTimeout(() => {
+                constructionIcon.style.animation = 'bounce 2s infinite ease-in-out';
+            }, 10);
+        });
+        
+        // Animate status items on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const statusItems = document.querySelectorAll('.status-item');
+            statusItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateX(-20px)';
+                    item.style.transition = 'all 0.5s ease-out';
+                    
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateX(0)';
+                    }, 50);
+                }, index * 200);
+            });
+        });
+        
+        // Animated progress dots
+        const progressDots = document.querySelectorAll('.progress-dot');
+        progressDots.forEach(dot => {
+            dot.addEventListener('mouseenter', function() {
+                this.style.animation = 'none';
+                setTimeout(() => {
+                    this.style.animation = 'pulse 0.5s ease-in-out';
+                }, 10);
+            });
+        });
+    </script>
+</body>
+</html>

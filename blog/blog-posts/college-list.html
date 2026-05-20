@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PS1X10VHP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1PS1X10VHP');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get my free College List Template — a simple template to organize safety, target & reach schools. Designed for FGLI & QuestBridge students." />
+  <meta name="author" content="Aldrich Jad Sy Magpali" />
+  <meta name="keywords" content="free college list template, college template, safety target reach, college planning, QuestBridge, FGLI" />
+  <meta property="og:title" content="Free College List Template | Safety, Target & Reach Template" />
+  <meta property="og:description" content="Download my free college list template to organize your applications. Simple, clean, and effective." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:type" content="article" />
+  <title>Free College List Template | Build Your College List</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/images/favicons/site.webmanifest" />
+  <link rel="stylesheet" href="/college-prep/college-prep.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    /* Blog post styles - matching original QuestBridge guide */
+    .blog-post-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .back-to-blog {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.2s ease;
+    }
+
+    .back-to-blog:hover {
+      transform: translateX(-5px);
+      color: var(--primary-light);
+    }
+
+    .blog-post-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .blog-post-header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: var(--heading);
+    }
+
+    .blog-post-meta {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    .blog-post-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .featured-image {
+      width: 100%;
+      border-radius: 16px;
+      margin-bottom: 2rem;
+      background: var(--primary-very-light);
+      overflow: hidden;
+    }
+
+    .featured-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 16/9;
+    }
+
+    .blog-post-content {
+      line-height: 1.8;
+      color: var(--text);
+    }
+
+    .blog-post-content h2 {
+      font-size: 1.6rem;
+      margin: 2rem 0 1rem;
+      color: var(--heading);
+    }
+
+    .blog-post-content h3 {
+      font-size: 1.3rem;
+      margin: 1.5rem 0 0.75rem;
+      color: var(--heading);
+    }
+
+    .blog-post-content p {
+      margin-bottom: 1.25rem;
+    }
+
+    .blog-post-content ul,
+    .blog-post-content ol {
+      margin: 1rem 0 1.5rem 2rem;
+    }
+
+    .blog-post-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Strategy Cards - removed hover lift effect */
+    .strategy-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 2rem 0 2rem;
+      justify-content: center;
+    }
+
+    .strat-card {
+      flex: 1;
+      min-width: 200px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .strat-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow);
+    }
+
+    .strat-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .strat-card h3 {
+      font-size: 1.3rem;
+      margin: 0.5rem 0 0.75rem;
+    }
+
+    .badge-safety {
+      display: inline-block;
+      background: #2e7d32;
+      color: white;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-target {
+      display: inline-block;
+      background: #f57c00;
+      color: white;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+
+    .badge-reach {
+      display: inline-block;
+      background: #c62828;
+      color: white;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+
+    .strat-desc {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.4;
+      margin-top: 0.5rem;
+    }
+
+    /* Pro Tip Card */
+    .pro-tip-card {
+      background: var(--primary-very-light);
+      border-left: 4px solid var(--primary);
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    /* Checklist */
+    .checklist-simple {
+      background: var(--off-white);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--white);
+      padding: 0.6rem 1rem;
+      border-radius: 30px;
+      border: 1px solid var(--border);
+    }
+
+    .checklist-item i {
+      color: var(--primary);
+      font-size: 1rem;
+      width: 1.2rem;
+    }
+
+    .checklist-item span {
+      font-size: 0.85rem;
+      color: var(--text);
+    }
+
+    /* Context Card */
+    .context-card {
+      background: var(--primary-very-light);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+
+    .context-icon {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .context-card h3 {
+      margin: 0 0 0.75rem 0;
+      font-size: 1.3rem;
+      color: var(--heading);
+    }
+
+    /* ========== SIMPLE, CLEAN FREE RESOURCE SECTION ========== */
+    .free-resource-hero {
+      background: var(--off-white);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2.5rem 0;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .free-resource-hero:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow);
+    }
+    .free-resource-hero .resource-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--primary);
+    }
+    .free-resource-hero h2 {
+      color: var(--heading);
+      margin: 0.5rem 0 0.75rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    .free-resource-hero p {
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+      max-width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* Standard a href button - no hover transform, proper link styling */
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--primary);
+      color: white;
+      padding: 0.7rem 1.8rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background-color 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .download-btn:hover {
+      background: var(--primary-light);
+      text-decoration: none;
+      color: white;
+    }
+    .preview-badge {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+    .preview-badge span {
+      background: var(--white);
+      padding: 0.25rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--text);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid var(--border);
+    }
+    .free-resource-hero .footnote {
+      font-size: 0.7rem;
+      margin-top: 1rem;
+      color: var(--text-light);
+    }
+
+    /* Product Callout for paid essay */
+    .product-callout {
+      background: var(--white);
+      border: 2px solid var(--primary);
+      border-radius: 20px;
+      padding: 1.8rem;
+      margin: 2rem 0;
+      text-align: center;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .product-callout:hover {
+      box-shadow: var(--shadow);
+    }
+
+    .product-icon {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .product-callout h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .product-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+
+    .product-btn:hover {
+      background: var(--primary-light);
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Final Pep */
+    .final-pep {
+      background: var(--off-white);
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      margin: 2rem 0;
+      border: 1px solid var(--border);
+    }
+
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .share-btn {
+      font-family: "Comfortaa", sans-serif;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--primary-very-light);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--primary);
+      cursor: pointer;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .share-btn:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .blog-post-container {
+        padding: 1rem 1rem 3rem;
+      }
+      .blog-post-header h1 {
+        font-size: 1.6rem;
+      }
+      .checklist-grid {
+        grid-template-columns: 1fr;
+      }
+      .strategy-grid {
+        flex-direction: column;
+      }
+      .free-resource-hero {
+        padding: 1.5rem;
+      }
+      .free-resource-hero h2 {
+        font-size: 1.4rem;
+      }
+      .free-resource-hero p {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header - consistent with original site -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="/college-prep/college-prep.html" class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+          <span class="logo-text">College Prep</span>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="/college-prep/college-prep.html#hero" class="nav-link">Home</a></li>
+            <li><a href="/college-prep/college-prep.html#about" class="nav-link">About</a></li>
+            <li><a href="/college-prep/college-prep.html#services" class="nav-link">Products</a></li>
+            <li><a href="/college-prep/college-prep.html#purchase-essays" class="nav-link">Essays</a></li>
+            <li class="nav-item-has-children">
+              <a href="/college-prep/college-prep.html#my-free-resources" class="nav-link">Resources <span class="dropdown-icon">▾</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/college-prep/college-prep.html#my-free-resources" class="dropdown-link">My Free Resources</a></li>
+                <li><a href="/college-prep/college-prep.html#resources" class="dropdown-link">External Resources</a></li>
+              </ul>
+            </li>
+            <li><a href="/college-prep/college-prep.html#faq" class="nav-link">FAQ</a></li>
+            <li><a href="/college-prep/college-prep.html#contact" class="nav-link">Contact</a></li>
+            <li><a href="/blog/blog.html" class="nav-link">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+            <span class="toggle-thumb"></span>
+          </button>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="blog-post-container">
+      <a href="/blog/blog.html" class="back-to-blog">← Back to Blog</a>
+
+      <article>
+        <div class="blog-post-header">
+          <h1>Build Your College List: Free Template & Strategy Guide</h1>
+          <div class="blog-post-meta">
+            <span><i class="far fa-calendar-alt"></i> May 20, 2026</span>
+            <span><i class="far fa-clock"></i> 6-7 min read</span>
+            <span><i class="fas fa-chalkboard-user"></i> College Strategy</span>
+            <span><i class="fas fa-download"></i> Free Template</span>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="featured-image">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Person typing on laptop" />
+        </div>
+
+        <div class="blog-post-content">
+          <p>When I built my first college list template, it was messy and overwhelming. I added so many columns that I never really used. More importantly, I struggled to pick out colleges.
+            I found myself adding, removing, and adjusting my list constantly over multiple months. When I was working on my 
+            QuestBridge rankings, I kept changing them everyday leading up to the final due date.
+          </p>
+          
+          <p>I created my <strong> <span style="color: #2e7d32;">Free</span> College List Template</strong> to help you guys during college application season!
+          It's simple, and contains all the necessary information to build a strategic list.</p>
+
+          <!-- ===== SIMPLE, CLEAN FREE RESOURCE SECTION (NOW WITH PROPER HREF LINK) ===== -->
+          <div class="free-resource-hero">
+            <div class="resource-icon">
+              <i class="fas fa-table-list"></i>
+            </div>
+            <h2>📋 Free College List Template</h2>
+            <p>A simple spreadsheet to track your safety, target, and reach schools. Add deadlines, notes, and keep everything in one place.</p>
+            <!-- This is now a proper href link that points to the actual CSV file -->
+            <a href="https://products.aldrichmagpali.com/b/IGzfo" target="_blank" class="download-btn">
+              <i class="fas fa-download"></i> Download Free Template
+            </a>
+            <div class="preview-badge">
+              <span><i class="fas fa-check-circle"></i> Safety / Target / Reach</span>
+              <span><i class="fas fa-calendar-week"></i> Deadline Tracker</span>
+              <span><i class="fas fa-pen"></i> Notes Column</span>
+            </div>
+            <div class="footnote">
+              <i class="fas fa-file-csv"></i> Link to Google Sheets
+            </div>
+          </div>
+
+          <!-- Strategy Cards Section -->
+          <h2>🎯 The 3 Categories Every College List Needs</h2>
+          <div class="strategy-grid">
+            <div class="strat-card">
+              <div class="strat-icon"><i class="fas fa-shield-alt" style="color: #2e7d32;"></i></div>
+              <span class="badge-safety">SAFETY SCHOOL</span>
+              <h3>Safety</h3>
+              <div class="strat-desc">Your stats are above their 75th percentile and the school has a relatively high acceptance rate • You are 90-100% confident that you will be accepted.</div>
+              <div class="strat-desc" style="margin-top: 0.6rem;"><strong>Aim for:</strong> 3-4 schools</div>
+            </div>
+            <div class="strat-card">
+              <div class="strat-icon"><i class="fas fa-bullseye" style="color: #f57c00;"></i></div>
+              <span class="badge-target">TARGET / MATCH</span>
+              <h3>Target</h3>
+              <div class="strat-desc">Your GPA/SAT fall within middle 50% • You're competitive</div>
+              <div class="strat-desc" style="margin-top: 0.6rem;"><strong>Aim for:</strong> 5-6 schools</div>
+            </div>
+            <div class="strat-card">
+              <div class="strat-icon"><i class="fas fa-mountain" style="color: #c62828;"></i></div>
+              <span class="badge-reach">REACH SCHOOL</span>
+              <h3>Reach</h3>
+              <div class="strat-desc">Your stats fall below their median or the school is highly selective • Your chances of admission are low and unpredictable</div>
+              <div class="strat-desc" style="margin-top: 0.6rem;"><strong>Aim for:</strong> 4-5 schools</div>
+            </div>
+          </div>
+
+          <div class="pro-tip-card">
+            <i class="fas fa-lightbulb" style="color: var(--primary); margin-right: 8px;"></i>
+            <strong>Pro Tip:</strong> Do not determine whether a school is a safety/target/reach purely based on acceptance rate! Look at the stats of admitted students to see where you stand amongst other applicants.
+          </div>
+
+          <h2>📋 How Many Colleges Should You Apply To?</h2>
+          <p>I recommend applying to <strong>12-15 colleges total</strong>. But please remember, this will vary based on your needs/goals. Don't forget that schools also have application fees! Here's a breakdown that I recommend:</p>
+          <ul>
+            <li><strong>3-4 Safety schools</strong> — These MUST be schools that you are confident you'll get admitted into.</li>
+            <li><strong>5-6 Target schools</strong> — This is where you'll spend most of your energy.</li>
+            <li><strong>4-5 Reach schools</strong> — Dream big, but be realistic about the odds.</li>
+          </ul>
+
+          <h2>🔎 How Do I Research Colleges?</h2>
+          <p>The first thing I recommend everybody to do is search up the Common Data Set (CDS) of the schools you're interested in.
+            Academics is usually the baseline for admissions, and the CDS reveals all the stats of admitted students.
+            You can use the CDS to see where you fit in in terms of GPA, SAT/ACT. Additionally, the CDS also provides details on what the schools
+            value. For instance, some schools may value academics more than others. Some may value extracurriculars while others don't. 
+            Finding your schools CDS is simple! Just search up "[School name] Common Data Set."
+          </p>
+          <p>
+            If you want a broad overview of a school, check out the <a href="https://www.usnews.com">U.S. News & World Report</a>. It provides information about the
+            student body, popular majors, and much more! One thing that I often used this source for was determining what the average cost of tuition would be for my
+            income bracket. You can find the U.S. News & World Report page for your college easily by typing "[School name] USN," and it usually pops up as the first link.
+          </p>
+          <p>
+            Another thing I researched is what social life is like at the school. You can easily find out more details about this by looking
+            at social media pages whether it's YouTube, TikTok, Instagram, or even going on Reddit and asking current students about their experiences.
+          </p>
+
+          <!-- Context Matters Section -->
+          <div class="context-card">
+            <div class="context-icon">
+              <i class="fas fa-glasses"></i>
+            </div>
+            <h3>Context Matters — Don't Compare Yourself to Strangers Online</h3>
+            <p>
+              Always remember, admissions officers will take your background into context! 
+              People may show off their 1600 SAT score, 4.0 GPA, and scoring fives on 10+ APs. But remember,
+              not everybody posts their stats online, and your context also matters in admissions.
+            </p>
+          </div>
+
+          <h2>✅ College List Building Checklist</h2>
+          <div class="checklist-simple">
+            <div class="checklist-grid">
+              <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Research 15-20 colleges initially, then narrow down</span></div>
+              <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Run the Net Price Calculator for each school</span></div>
+              <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Check if they meet 100% of demonstrated need</span></div>
+              <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Visit virtual info sessions, go on in-person or virtual tours</span></div>
+              <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Talk to current students</span></div>
+              <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Track deadlines + supplement prompts</span></div>
+              <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Request fee waivers if applicable</span></div>
+              <div class="checklist-item"><i class="fas fa-check-circle"></i> <span>Apply for local scholarships early</span></div>
+            </div>
+          </div>
+
+          <div class="final-pep">
+            <i class="fas fa-heart" style="color: var(--primary); font-size: 1.8rem; margin-bottom: 0.5rem; display: inline-block;"></i>
+            <p><strong>You've got this.</strong> Building a college list can be hard. I remember building my list for <strong>MONTHS</strong>. Start with safeties you love, add targets that excite you, and then sprinkle in reaches that you've always dreamed of attending.</p>
+            <p>Questions? <a href="/college-prep/college-prep.html#contact" style="color: var(--primary); font-weight: 600;">Reach out anytime</a>. I'm rooting for you! 🎓✨</p>
+          </div>
+        </div>
+
+        <div class="share-buttons">
+          <button class="share-btn" onclick="copyToClipboard()"><i class="fas fa-link"></i> Copy Link</button>
+          <!-- Share button now uses the same href link -->
+          <a href="https://products.aldrichmagpali.com/b/IGzfo" target="_blank" class="share-btn" style="text-decoration: none;">
+            <i class="fas fa-download"></i> Get Free Template
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/aldrich-magpali/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/ajsm1276/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@AJSM1276" target="_blank" rel="noopener noreferrer" class="social-link" title="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.tiktok.com/@ajsm3" target="_blank" rel="noopener noreferrer" class="social-link" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+
+        <div class="footer-info">
+          <p>College Prep · QuestBridge Scholar · Williams College Student</p>
+        </div>
+
+        <div class="footer-contact">
+            <p>For inquiries: <a href="mailto:aldrichmagpali1276@gmail.com">aldrichmagpali1276@gmail.com</a></p>
+            <p class="copyright">© <span id="current-year">2026</span> Aldrich Magpali</p>
+            <p class="legal-links" style="margin-top: 0.5rem; font-size: 0.7rem;">
+              <a href="/privacy.html" style="color: var(--text-light);">Privacy Policy</a> | 
+              <a href="/terms.html" style="color: var(--text-light);">Terms of Use</a>
+            </p>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dark Mode Toggle
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    if (localStorage.getItem("darkMode") === "enabled") {
+      body.classList.add("dark-mode");
+      darkModeToggle.classList.add("active");
+    }
+
+    darkModeToggle.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+      darkModeToggle.classList.toggle("active");
+      localStorage.setItem("darkMode", body.classList.contains("dark-mode") ? "enabled" : "disabled");
+    });
+
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+
+    if (menuToggle) {
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+    }
+
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (menuToggle) {
+          menuToggle.classList.remove("active");
+          nav.classList.remove("active");
+        }
+      });
+    });
+
+    // Dropdown functionality for mobile
+    const dropdownItems = document.querySelectorAll(".nav-item-has-children");
+    dropdownItems.forEach((item) => {
+      const link = item.querySelector(".nav-link");
+      link.addEventListener("click", (e) => {
+        if (window.innerWidth <= 999) {
+          e.preventDefault();
+          item.classList.toggle("active");
+        }
+      });
+    });
+    
+    function copyToClipboard() {
+      navigator.clipboard.writeText(window.location.href);
+      alert("✓ Link copied to clipboard!");
+    }
+    
+    window.copyToClipboard = copyToClipboard;
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+  <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="36612b34-648e-49d6-b69c-2dba4fba8ed6"></script>
+  <script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
+</body>
+</html>
